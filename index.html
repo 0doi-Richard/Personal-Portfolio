@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Interactive Bubbles</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Teams</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bubble Animation -->
+    <canvas id="bubbleCanvas"></canvas>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Richard Odoi,</div>
+                <div class="text-3">And I'm a <span>Developer</span>.</div>
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About Me</h2>
+        <div class="about-content">
+            <div class="column left">
+                <img src="p.jpeg" alt="About Me">
+            </div>
+            <div class="column right">
+                <div class="text">I'm Richard and I'm a <span>Developer</span></div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quae architecto excepturi illo ut culpa consequatur magni dignissimos. At nulla nisi dolor. Unde nobis maxime optio est aut reiciendis vel neque, quis quisquam a obcaecati ducimus. Quae laudantium, delectus ullam magni minima rerum, autem illo voluptas error iure natus ad sint voluptate minus labore aperiam dolorem, expedita recusandae quisquam fugiat.</p>
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- services section start -->
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Services</h2>
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-paint-brush"></i>
+                        <div class="text">Web Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis adipisci, facere exercitationem id laudantium!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="text">Advertising</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis adipisci, facere exercitationem id laudantium!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">App Design</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime facilis adipisci, facere exercitationem id laudantium!</p>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
