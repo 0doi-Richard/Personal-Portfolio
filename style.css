@@ -121,21 +121,22 @@ canvas {
     background: none;
 }
 
-/* about section styling */
-section {
-    padding: 100px 0;
-}
-.about{
-    font-family: 'Poppins', sans-serif;
-
-}
-.about .title{
+/* all similar content styling code */
+section .title{
     text-align: center;
     font: 40px;
     font-weight: 500;
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'ubuntu', sans-serif;
+}
+
+/* about section styling */
+.about{
+    padding: 100px 0;
+}
+.about, .services{
+    font-family: 'Poppins', sans-serif;
 }
 .about .title::before{
     content: "";
@@ -147,7 +148,7 @@ section {
     background: black;
     transform: translateX(-50%);
 }
-.about .title::after {
+.about .title::after{
     content: "who i am";
     position: absolute;
     bottom: -182px;
@@ -158,7 +159,8 @@ section {
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+.about .about-content,
+.services .services-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -176,7 +178,6 @@ section {
 .about .about-content .right{
     width: 55%;
 }
-
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
@@ -203,6 +204,71 @@ section {
 .about .about-content .right a:hover{
     color: #ff5733;
     background: none;
+}
+
+/* service section styling */
+.services{
+    padding: 100px 0;
+}
+.services{
+    color: #fff;
+    background: #111;
+}
+.services .title::before,
+.services .title::after{
+    background: #fff;
+}
+.services .title::before{              
+    content: "";
+    position: absolute;
+    bottom: -890px;
+    left: 50%;
+    width: 190px;
+    height: 3px;
+    background: #fff;     
+    transform: translateX(-50%);
+}
+.services .title::after{
+    background: #111;
+    content: "what i provide";
+    position: absolute;
+    bottom: -902px;
+    left: 50%;
+    font-size: 20px;
+    color: #ff5733;
+    padding: 5px;
+    transform: translateX(-50%);    
+}
+.services .services-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .services-content .card:hover{
+    background: #ff5733;
+}
+.services .services-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .services-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .services-content .card i{
+    font-size: 50px;
+    color: #ff5733;
+    transition: color 0.3s ease;
+}
+.services .services-content .card:hover i{
+    color: #fff;
+}
+.services .services-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 
