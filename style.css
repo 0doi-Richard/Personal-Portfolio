@@ -289,6 +289,12 @@ section .title{
         height: 350px;
         width: 350px;
     }
+    .services .title::before{ 
+        bottom: -835px;
+    }
+    .services .title::after{
+        bottom: -847px;
+    }
 }
 @media (max-width: 970px){
     .max-width{
@@ -348,6 +354,12 @@ section .title{
     }
     .about .about-content .right{
         flex: 100%;
+    }
+    .services .title::before{ 
+        bottom: -1145px;
+    }
+    .services .title::after{
+        bottom: -1157px;
     }
 
 }
