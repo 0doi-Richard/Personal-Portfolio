@@ -57,13 +57,44 @@ $(document).ready(function(){
             $('.navbar').addClass("sticky");
         }else{
             $('.navbar').removeClass("sticky");
-        }                                                               
+        }
+        if(this.scrollY > 500){
+            $('.scroll-up-btn').addClass("show");
+        }else{
+            $('.scroll-up-btn').removeClass("show");
+        } 
+    });
+
+    // slide-up script
+    $('.scroll-up-btn').click(function(){
+        $('html').animate({scrollTop: 0});
     });
 
     // Toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
+    });
+
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["YouTuber.", "Developer.", "Blogger.", "Freelancer.", "Forex Trader."],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+        backDelay: 1500,
+        smartBackspace: true,
+        startDelay: 1500
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["YouTuber.", "Developer.", "Blogger.", "Freelancer.", "Forex Trader."],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true,
+        backDelay: 1500,
+        smartBackspace: true,
+        startDelay: 1500
     });
 
     // owl carousel script

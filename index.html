@@ -8,23 +8,27 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/> 
 </head>
+
 <body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Teams</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home" class="menu-btn">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#services" class="menu-btn">Service</a></li>
+                <li><a href="#skills" class="menu-btn">Skills</a></li>
+                <li><a href="#teams" class="menu-btn">Teams</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -41,7 +45,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Richard Odoi,</div>
-                <div class="text-3">And I'm a <span>Developer</span>.</div>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
                 <a href="#">Hire me</a>
             </div>
         </div>
@@ -56,7 +60,7 @@
                 <img src="profile-1.jpeg" alt="About Me">
             </div>
             <div class="column right">
-                <div class="text">I'm Richard and I'm a <span>Developer</span></div>
+                <div class="text">I'm Richard and I'm a <span class="typing-2"></span></div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus quae architecto excepturi illo ut culpa consequatur magni dignissimos. At nulla nisi dolor. Unde nobis maxime optio est aut reiciendis vel neque, quis quisquam a obcaecati ducimus. Quae laudantium, delectus ullam magni minima rerum, autem illo voluptas error iure natus ad sint voluptate minus labore aperiam dolorem, expedita recusandae quisquam fugiat.</p>
                 <a href="#">Download CV</a>
             </div>
@@ -230,22 +234,27 @@
                                 </div>
                                 <div class="field email">
                                     <input type="email" placeholder="Email" required>
-                                </div>
-                                <div class="field">
-                                    <input type="text" placeholder="Subject" required>
-                                </div>
-                                <div class="field textarea">
-                                    <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
-                                </div>
-                                <div class="button">
-                                    <button type="submit">Send message</button>
-                                </div>
+                                </div>        
+                            </div>
+                            <div class="field">
+                                <input type="text" placeholder="Subject" required>
+                            </div>
+                            <div class="field textarea">
+                                <textarea cols="30" rows="10" placeholder="Describe Project..." required></textarea>
+                            </div>
+                            <div class="button">
+                                <button type="submit">Send message</button>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- footer section start -->
+        <footer>
+            <span>Created by <a href="#">AllardCodes</a> | <span class="far fa-copyright">2024 All rights reserved.</span></span>
+        </footer>
 
 
     <script src="script.js"></script>
